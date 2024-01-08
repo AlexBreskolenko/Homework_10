@@ -54,9 +54,21 @@ console.log(strRevers);
 
 /*
 Задание 4
-
 Записать в переменную случайное целое число в диапазоне [0; 100]. Используйте объект Math.
 */
 
 let randomNum = Math.floor(Math.random() * (100 - 1 + 1) + 1);
 console.log(randomNum);
+
+
+/*Задание 5
+Дан произвольный массив. Необходимо вывести количество элементов массива, затем перебрать его и вывести в консоль каждый элемент массива.
+*/
+
+let array = [5, 3, 2, 6, 9, 0, 1];
+
+console.log(`Длинна массива = ${array.length} элентов.`);
+
+let result = array.map(function(item, index, array){
+  return console.log(`индекс = ${index} элемент = ${item}`);
+});
