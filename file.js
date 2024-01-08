@@ -24,3 +24,39 @@ if (Boolean(+num)) {
 В других случаях выводите сообщение: «Тип x не определён».
 Примечание: в этом задании использовать promt не нужно.
  */
+let x = true;
+
+switch (typeof x) {
+  case "boolean":
+    console.log("x - boolean");
+    break;
+
+  case "string":
+    console.log("x - string");
+    break;
+
+  case "number":
+    console.log("x - number");
+    break;
+
+  default:
+    console.log("Тип x не определён");
+}
+
+/*
+Задание 3
+Дана строка. Необходимо вывести в консоль перевёрнутый вариант. 
+Например, "Hello" -> "olleH". 
+*/
+let str = "Hello";
+let strRevers = str.split("").reverse().join("");
+console.log(strRevers);
+
+/*
+Задание 4
+
+Записать в переменную случайное целое число в диапазоне [0; 100]. Используйте объект Math.
+*/
+
+let randomNum = Math.floor(Math.random() * (100 - 1 + 1) + 1);
+console.log(randomNum);
