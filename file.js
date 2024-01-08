@@ -121,3 +121,23 @@ for (let i = 0; i < arr.length; i++) {
 console.log(
   `Чётных чисел : ${even} \n Нечётных чисел ${odd} \n Нулей ${zerro}`
 );
+
+/*
+Задание 8
+
+Создайте произвольный массив Map. 
+Получите его ключи и выведите в консоль все значения в виде «Ключ — Х, значение — Y».
+Используйте шаблонные строки.
+*/
+
+let ageAnimals = new Map([
+  ["cat", 4],
+  ["dog", 8],
+  ["monkey", 10],
+  ["leo", 2],
+  ["fox", 6],
+]);
+
+for (let animal of ageAnimals.keys()) {
+  console.log(`Ключ - ${animal} , Значение - ${ageAnimals.get(animal)}`);
+}
