@@ -60,7 +60,6 @@ console.log(strRevers);
 let randomNum = Math.floor(Math.random() * (100 - 1 + 1) + 1);
 console.log(randomNum);
 
-
 /*Задание 5
 Дан произвольный массив. Необходимо вывести количество элементов массива, затем перебрать его и вывести в консоль каждый элемент массива.
 */
@@ -69,6 +68,28 @@ let array = [5, 3, 2, 6, 9, 0, 1];
 
 console.log(`Длинна массива = ${array.length} элентов.`);
 
-let result = array.map(function(item, index, array){
+let result = array.map(function (item, index, array) {
   return console.log(`индекс = ${index} элемент = ${item}`);
 });
+
+/*
+Задание 6
+
+Дан массив. Проверить, одинаковые ли элементы в массиве и вывести результат true или false в консоль.
+Речь идёт не о двух рядом стоящих одинаковых элементах, а обо всех. Проверить, все ли элементы в массиве одинаковые.
+*/
+
+let array = [2, 2, 2, 2, 2];
+let flag = false;
+
+for (let i = 0, y = i + 1; i < array.length; i++) {
+  if (array[i] !== array[y]) {
+    flag = true;
+  }
+}
+
+if (flag) {
+  console.log("Массив состоит не из одинакавых элементов.");
+} else {
+  console.log("Массив состоит из одинакавых элементов.");
+}
